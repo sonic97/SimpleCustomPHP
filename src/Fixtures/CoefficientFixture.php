@@ -6,10 +6,13 @@ namespace HomeTest\Fixtures;
 
 use HomeTest\Modules\ShippingModule\Coefficient\Coefficient;
 use HomeTest\Modules\ShippingModule\Coefficient\CoefficientInterface;
-use HomeTest\Modules\ShippingModule\Product\Product;
 
 class CoefficientFixture
 {
+    /**
+     * get fixture Coefficient
+     * @return CoefficientInterface
+     */
     public static function getCoefficient(): CoefficientInterface
     {
         $coefficient = new Coefficient();

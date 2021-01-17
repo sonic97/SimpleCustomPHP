@@ -13,6 +13,11 @@ class WeightFee implements WeightFeeInterface
 
     private int $coefficient;
 
+    /**
+     * @param ProductInterface $product
+     * @param CoefficientInterface $coefficient
+     * @return WeightFee
+     */
     public static function createFromProductAnCoefficient(ProductInterface $product, CoefficientInterface $coefficient)
     {
         return new self($product->getWeight(), $coefficient->getWeightCoefficient());

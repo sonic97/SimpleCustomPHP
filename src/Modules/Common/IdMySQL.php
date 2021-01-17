@@ -3,7 +3,11 @@
 
 namespace HomeTest\Modules\Common;
 
-
+/**
+ * Class IdMySQL
+ * This is use for entity which plan to save in MySQL
+ * @package HomeTest\Modules\Common
+ */
 abstract class IdMySQL implements IdMySQLInterface
 {
     private int $id;

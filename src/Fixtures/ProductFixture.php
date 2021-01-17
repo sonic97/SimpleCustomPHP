@@ -9,6 +9,10 @@ use HomeTest\Modules\ShippingModule\Product\ProductInterface;
 
 class ProductFixture
 {
+    /**
+     * get fixture Product
+     * @return ProductInterface
+     */
     public static function getProduct(): ProductInterface
     {
         $product = new Product();

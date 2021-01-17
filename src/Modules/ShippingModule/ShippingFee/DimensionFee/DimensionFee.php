@@ -17,6 +17,11 @@ class DimensionFee implements DimensionFeeInterface
 
     private int $coefficient;
 
+    /**
+     * @param ProductInterface $product
+     * @param CoefficientInterface $coefficient
+     * @return DimensionFee
+     */
     public static function createFromProductAnCoefficient(ProductInterface $product, CoefficientInterface $coefficient)
     {
         return new self($product->getWidth(), $product->getHeight(), $product->getDepth(), $coefficient->getDimensionCoefficient());
